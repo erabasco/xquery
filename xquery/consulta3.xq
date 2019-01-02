@@ -4,3 +4,4 @@ for $b in doc("libros.xml")//libro
     let $c := $b/autor
     return
     <libro>{ $b/titulo, <autores>{ $c }</autores>}</libro>
+    
